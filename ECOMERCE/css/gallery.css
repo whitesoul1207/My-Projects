@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Gallery container styling */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Styling for each image card */
+.gallery-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 3px solid #ddd;
+}
+
+/* Styling for the description text */
+.gallery-card .desc {
+    padding: 15px;
+    text-align: center;
+    background-color: #f4f4f4;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Hover effects on card */
+.gallery-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Hover effects on the link */
+.gallery-card a {
+    text-decoration: none;
+}
+
+/* Responsive handling */
+@media (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}

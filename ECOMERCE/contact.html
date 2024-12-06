@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us - Join Our Developer Team</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section-title {
+            color: #34495e;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        .section-content {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        .section-content p {
+            line-height: 1.6;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        form textarea {
+            resize: vertical;
+        }
+        form button {
+            background-color: #e74c3c;
+            color: white;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        form button:hover {
+            background-color: #c0392b;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 40px;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us - Join Our Developer Team</h1>
+        <p>We'd love to hear from you!</p>
+    </header>
+
+    <div class="container">
+        <!-- Contact Form Section -->
+        <div class="section-content">
+            <h2 class="section-title">Send Us a Message</h2>
+            <p>If you are interested in joining our team or have any questions about our job openings, feel free to reach out to us. We'd be happy to chat!</p>
+            <form action="mailto:careers@yourcompany.com" method="POST" enctype="multipart/form-data">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell us about yourself or ask any questions" rows="6" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Company Info Section -->
+        <div class="section-content">
+            <h2 class="section-title">Our Location</h2>
+            <p>Our office is located in the heart of [City], but we offer remote work options. We are always open to talented developers from anywhere!</p>
+            <ul>
+                <li><strong>Address:</strong> [Your Company Address], [City], [Postal Code]</li>
+                <li><strong>Email:</strong> <a href="mailto:careers@yourcompany.com">careers@yourcompany.com</a></li>
+                <li><strong>Phone:</strong> [Your Phone Number]</li>
+            </ul>
+        </div>
+
+        <!-- Call to Action Section -->
+        <div class="cta">
+            <p>Ready to make an impact? Join our development team today!</p>
+            <button onclick="window.location.href='mailto:careers@yourcompany.com'">Apply Now</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 [Your Company Name] | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
